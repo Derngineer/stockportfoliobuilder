@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <!-- Add Bootstrap CSS Link -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS for Centering Content -->
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .form-container {
+            max-width: 400px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class ="row">
+        <div class="container-fluid justify-content-center">
+            <h1>Welcome Back Investor,<br>Lets Create Some More <br>Portfolios 😁!</h1>
+        </div>
+    <div>
+    <div class ="row">
+        <div class="container-fluid justify-content-center">
+        <div class="form-container">
+        <h1 class="text-center">User Login</h1>
+        Try ➡️Username : Emma
+        <br>Password :0mlFuKiNQJJxf33
+        <form method="post">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit" class="btn btn-primary btn-block">Login</button>
+        </form>
+        <p class="text-center mt-3">Don't have an account? <a href="{% url 'register' %}">Register</a></p>
+    </div>
+</div>
+</div>
+</body>
+</html>
+
+

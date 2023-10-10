@@ -1,0 +1,42 @@
+{% extends "main_app/base.html"%}
+
+
+{%block content%}
+<br>
+    {% comment %} <h3>This is what I have for you <hr> {{text}}</h3> {% endcomment %}
+    <h5>Make some changes</h5>
+    <hr>
+    <form>
+        <div class="mb-3">
+            <label for="customRange1" class="form-label">Number of Simulations: <span id="simulationsValue">1000</span></label>
+            <input type="range" class="form-range" min="1000" max="100000" step="1000" id="customRange1">
+        </div>
+        <div class="mb-3">
+            <label for="customRange2" class="form-label">Funds: $<span id="fundsValue">10,000,000</span></label>
+            <input type="range" class="form-range" min="10000000" max="5000000000" step="500000000" id="customRange2">
+        </div>
+        <div class="mb-3">
+            <label for="formFile" class="form-label">Upload CSV with stock symbols</label>
+            <input class="form-control" type="file" id="formFile">
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+    <a href="{% url 'logout' %}">Logout</a>
+
+    <script>
+        // Function to update slider values
+        function updateSliderValue(sliderId, valueId) {
+            const slider = document.getElementById(sliderId);
+            const value = document.getElementById(valueId);
+            value.textContent = slider.value;
+            slider.addEventListener('input', () => {
+                value.textContent = slider.value;
+            });
+        }
+    
+        // Call the function to update slider values for both sliders
+        updateSliderValue('customRange1', 'simulationsValue');
+        updateSliderValue('customRange2', 'fundsValue');
+    </script>
+    
+{%endblock%}

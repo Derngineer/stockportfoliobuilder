@@ -1,0 +1,13 @@
+{% extends "main_app/base.html"%}
+{% block content %}
+<div class="card text-bg-light" style ="border: none; border-radius:0px">
+    <div class="card-header">Create Portofolio using Harry Markowitz Model </div>
+    <div class="card-body">
+        {% load plotly_dash %}
+        {% plotly_header %}
+        {% plotly_direct name="AssetView" %}
+        {% plotly_footer %}
+    </div>
+  </div>
+
+{% endblock %}
