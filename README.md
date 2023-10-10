@@ -1,4 +1,4 @@
-# stockportfoliobuilder
+# Stock Portfolio Builder
 Markowitz model and montercarlo simulations to build robust risk averse investment portfolios
 
 📈 The system uses Modern Portfolio Theory to allocate assets
