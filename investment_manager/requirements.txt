@@ -30,6 +30,7 @@ asynctest==0.13.0
 atomicwrites==1.4.0
 attrs==23.1.0
 auto_gpt_plugin_template @ git+https://github.com/Significant-Gravitas/Auto-GPT-Plugin-Template@7612a14c629dc64ad870eee4d05850d60e1dd9ce
+autobahn==23.6.2
 autoflake==2.2.0
 Automat @ file:///tmp/build/80754af9/automat_1600298431173/work
 autopep8 @ file:///opt/conda/conda-bld/autopep8_1650463822033/work
@@ -57,6 +58,8 @@ cattrs==23.1.2
 certifi @ file:///private/var/folders/sy/f16zz6x50xz3113nwtb9bvq00000gp/T/abs_477u68wvzm/croot/certifi_1671487773341/work/certifi
 cffi @ file:///private/var/folders/sy/f16zz6x50xz3113nwtb9bvq00000gp/T/abs_1b0qzba5nr/croot/cffi_1670423213150/work
 cfgv==3.3.1
+channels==4.0.0
+channels-redis==4.1.0
 chardet @ file:///Users/builder/ci_310/chardet_1642531418028/work
 charset-normalizer==3.1.0
 chromadb==0.3.29
@@ -94,9 +97,11 @@ cvxpy==1.3.2
 cycler @ file:///tmp/build/80754af9/cycler_1637851556182/work
 cymem==2.0.7
 cytoolz @ file:///private/var/folders/sy/f16zz6x50xz3113nwtb9bvq00000gp/T/abs_95v3uo4da9/croot/cytoolz_1667465932724/work
-dash==2.11.1
+daphne==4.0.0
+dash==2.9.3
 dash-bootstrap-components==1.4.2
 dash-core-components==2.0.0
+dash-daq==0.5.0
 dash-html-components==2.0.0
 dash-table==5.0.0
 dask @ file:///private/var/folders/sy/f16zz6x50xz3113nwtb9bvq00000gp/T/abs_625ab4ad-a7aa-46be-859b-eb7a32fc37bc46adm9wx/croots/recipe/dask-core_1658513219136/work
@@ -116,11 +121,15 @@ distributed @ file:///private/var/folders/sy/f16zz6x50xz3113nwtb9bvq00000gp/T/ab
 distro==1.8.0
 Django==4.2.2
 django-cors-headers==4.2.0
+django-plotly-dash==2.2.2
+django-redis==5.4.0
 djangorestframework==3.14.0
 dnspython==2.3.0
 docker==6.1.3
 docstring-to-markdown @ file:///private/var/folders/sy/f16zz6x50xz3113nwtb9bvq00000gp/T/abs_1e4inmg_31/croot/docstring-to-markdown_1673447635742/work
 docutils @ file:///private/var/folders/sy/f16zz6x50xz3113nwtb9bvq00000gp/T/abs_10cfb287-0327-45ef-a38e-53dffd30cef1nwpvy20e/croots/recipe/docutils_1657175439973/work
+dpd-components==0.1.0
+dpd-static-support==0.0.5
 duckdb==0.8.1
 duckduckgo-search==3.0.2
 ecos==2.0.12
@@ -190,7 +199,7 @@ imageio @ file:///private/var/folders/sy/f16zz6x50xz3113nwtb9bvq00000gp/T/abs_97
 imagesize @ file:///private/var/folders/sy/f16zz6x50xz3113nwtb9bvq00000gp/T/abs_4a6ed1be-fe30-4d6a-91d4-f867600caa0be5_dxzvt/croots/recipe/imagesize_1657179500955/work
 imbalanced-learn @ file:///private/var/folders/sy/f16zz6x50xz3113nwtb9bvq00000gp/T/abs_92fc6e0vq4/croot/imbalanced-learn_1677191578395/work
 importlib-metadata==6.0.1
-incremental @ file:///tmp/build/80754af9/incremental_1636629750599/work
+incremental==22.10.0
 inflection==0.5.1
 iniconfig @ file:///home/linux1/recipes/ci/iniconfig_1610983019677/work
 intake @ file:///private/var/folders/sy/f16zz6x50xz3113nwtb9bvq00000gp/T/abs_404ewry1f9/croot/intake_1676619886361/work
@@ -504,7 +513,8 @@ traitlets @ file:///private/var/folders/sy/f16zz6x50xz3113nwtb9bvq00000gp/T/abs_
 transformers==4.30.2
 trio==0.22.0
 trio-websocket==0.10.3
-Twisted @ file:///private/var/folders/sy/f16zz6x50xz3113nwtb9bvq00000gp/T/abs_daykstm3mh/croots/recipe/twisted_1659592770155/work
+Twisted==23.8.0
+txaio==23.1.1
 typer==0.7.0
 types-beautifulsoup4==4.12.0.5
 types-colorama==0.4.15.11
@@ -548,3 +558,4 @@ zict==2.1.0
 zipp @ file:///private/var/folders/sy/f16zz6x50xz3113nwtb9bvq00000gp/T/abs_b71z79bye2/croot/zipp_1672387125902/work
 zope.interface @ file:///Users/builder/ci_310/zope.interface_1642542202636/work
 zstandard @ file:///private/var/folders/sy/f16zz6x50xz3113nwtb9bvq00000gp/T/abs_40ayfv1xn6/croot/zstandard_1677014126754/work
+
