@@ -1,4 +1,5 @@
 absl-py==1.4.0
+psycopg2-binary~=2.9.6
 abstract_singleton==1.0.1
 accelerate==0.20.3
 aiofiles==23.1.0
