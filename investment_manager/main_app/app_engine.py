@@ -90,7 +90,7 @@ class Portfolio:
 
             return "nothing calculated"
         
-        n_simulations = 10000
+        n_simulations = 100
         current_prices = yf.download(stocks_list, period="1d")['Adj Close']
         current_prices = current_prices.values.tolist()
         print("here is our current prices:", current_prices)
