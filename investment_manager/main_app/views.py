@@ -12,6 +12,7 @@ from django.contrib.auth import login, authenticate
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth.forms import AuthenticationForm
 from django.contrib.auth import logout
+from django.views.decorators.csrf import csrf_exempt
 
 app = app_dash.app
 
@@ -46,7 +47,7 @@ def portfolio_testing(request):
     }
     return render(request,"main_app/testingportfolio.html", context)
 
-
+@csrf_exempt
 def register(request):
     if request.method == 'POST':
         form = RegistrationForm(request.POST)
@@ -57,6 +58,7 @@ def register(request):
         form = RegistrationForm()
     return render(request, 'main_app/register.html', {'form': form})
 
+@csrf_exempt
 def login_view(request):
     if request.method == 'POST':
         form = AuthenticationForm(data=request.POST)
@@ -67,6 +69,7 @@ def login_view(request):
     else:
         form = AuthenticationForm()
     return render(request, 'main_app/login.html', {'form': form})
+
 def user_logout(request):
     logout(request)
     return redirect('login')  # Redirect to the home page or any other page after logout.
