@@ -34,6 +34,7 @@ ecos==2.0.12
 Flask==2.3.3
 fonttools==4.42.1
 frozendict==2.3.8
+gunicorn==21.2.0
 html5lib==1.1
 hyperlink==21.0.0
 idna==3.4
