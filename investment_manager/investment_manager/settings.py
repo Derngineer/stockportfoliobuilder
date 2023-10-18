@@ -24,7 +24,7 @@ SECRET_KEY = "django-insecure-!e1+x8f1_)$f84k989&21f3$%*2n60ws_!@)qd6z=sy2^ce2$#
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
-# CSRF_TRUSTED_ORIGINS = ['*.railway.app/']
+CSRF_TRUSTED_ORIGINS = ['https://stockportfoliobuilder-production.up.railway.app/']
 
 
 ALLOWED_HOSTS = ["*"]
