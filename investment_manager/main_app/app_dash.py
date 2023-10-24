@@ -21,7 +21,7 @@ external_stylesheets = [dbc.themes.CERULEAN]
 app = DjangoDash("AssetView", external_stylesheets=external_stylesheets)
 
 # Define the path to the assetnames.txt file
-file_path = "/Users/mac/Portfolio_Builder/env/investment_manager/main_app/assetnames.txt"
+file_path = "main_app/assetnames.txt"
 
 # Initialize the list of assets
 stocks_list = []

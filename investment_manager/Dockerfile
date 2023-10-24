@@ -1,40 +1,20 @@
-FROM python:3.10.0-slim
+FROM python:3.10
 
-# install needed packages
-RUN apt-get update && apt-get install -y --no-install-recommends \
-    gcc \
-    libcairo2-dev
+ENV PYTHONUNBUFFERED 1 
 
-# clean up
-RUN apt-get clean && rm -rf /var/lib/apt/lists/*
 
-WORKDIR /app
+RUN pip install --upgrade pip
 
-COPY requirements.txt ./
+COPY requirements.txt . 
 
 RUN pip install -r requirements.txt
 
-COPY . .
+RUN mkdir /app
 
-CMD gunicorn investment_manager.wsgi
-
-
-
+COPY ./investment_manager /app
+WORKDIR /app
 
 
+COPY ./entrypoint.sh /
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-# web: gunicorn investment_manager.wsgi --log-file -
+ENTRYPOINT ["sh", "/entrypoint.sh"]
