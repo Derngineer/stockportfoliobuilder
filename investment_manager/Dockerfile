@@ -11,7 +11,7 @@ RUN pip install -r requirements.txt
 
 RUN mkdir /app
 
-COPY ./investment_manager /app
+COPY . /app
 WORKDIR /app
 
 
